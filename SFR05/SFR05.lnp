@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"sfr05\startup_stm32f407xx.o"
+"sfr05\main.o"
+"sfr05\stm32f4xx_it.o"
+"sfr05\stm32f4xx_hal_msp.o"
+"sfr05\stm32f4xx_hal_tim.o"
+"sfr05\stm32f4xx_hal_tim_ex.o"
+"sfr05\stm32f4xx_hal_rcc.o"
+"sfr05\stm32f4xx_hal_rcc_ex.o"
+"sfr05\stm32f4xx_hal_flash.o"
+"sfr05\stm32f4xx_hal_flash_ex.o"
+"sfr05\stm32f4xx_hal_flash_ramfunc.o"
+"sfr05\stm32f4xx_hal_gpio.o"
+"sfr05\stm32f4xx_hal_dma_ex.o"
+"sfr05\stm32f4xx_hal_dma.o"
+"sfr05\stm32f4xx_hal_pwr.o"
+"sfr05\stm32f4xx_hal_pwr_ex.o"
+"sfr05\stm32f4xx_hal_cortex.o"
+"sfr05\stm32f4xx_hal.o"
+"sfr05\stm32f4xx_hal_exti.o"
+"sfr05\system_stm32f4xx.o"
+--strict --scatter "SFR05\SFR05.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SFR05.map" -o SFR05\SFR05.axf
